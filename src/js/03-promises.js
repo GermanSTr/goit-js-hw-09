@@ -5,6 +5,10 @@ const firstDelayEl = formEl.querySelector('input[name="delay"]');
 const delayStepEl = formEl.querySelector('input[name="step"]');
 const amountEl = formEl.querySelector('input[name="amount"]');
 
+const formElData = document.querySelector('.formData');
+const startElData = formEl.querySelector('input[name="start"]');
+const finishElData = formEl.querySelector('input[name="finish"]');
+
 formEl.addEventListener('submit', createPromises);
 
 function createPromises(evt) {
